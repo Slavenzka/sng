@@ -1,0 +1,135 @@
+.game__wrapper {
+  position: relative;
+  padding-bottom: 2.4em;
+  font-family: $font-family__main;
+  font-size: 1rem;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 150vw;
+    height: 20em;
+    background-color: $color__light;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25vw;
+    width: 150vw;
+    height: 100%;
+    background-color: rgba(255, 208, 66, 0.75);
+    z-index: -1;
+  }
+}
+
+.game__announce {
+  margin: 0;
+  margin-top: calc(12.8em / 8);
+  margin-left: -5px;
+  max-width: calc(145.5em / 8);
+  min-height: calc(55em / 8);
+  font-size: 8em;
+  font-weight: 700;
+  line-height: calc(8.5em / 8);
+  color: $color__main;
+  text-transform: uppercase;
+  transform-origin: 0 0;
+  transform: scaleY(1.3);
+  letter-spacing: 3.8px;
+}
+
+.game__init {
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: calc(32.5em / 3.9);
+  padding: 0;
+  font-size: 3.9em;
+  font-weight: 400;
+  line-height: calc(5.5em / 3.9);
+  color: $color__dark;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-5.5em / 3.9);
+    left: calc(50% - 11em / 3.9 / 2);
+    width: calc(11em / 3.9);
+    height: calc(6em / 3.9);
+    background-image: url("../img/game__arrow-down.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.game__warning {
+  display: none;
+  margin: 0;
+  margin-top: 5em;
+  padding: 0;
+  font-size: 3.9em;
+  font-weight: 400;
+  line-height: calc(5.5em / 3.9);
+  color: $color__dark;
+  text-align: center;
+  background-color: transparent;
+}
+
+.game__content {
+  margin-top: -544px;
+}
+
+.game__frame {
+  margin: 0 auto;
+  width: 963px;
+  height: 544px;
+  background-image: url("../img/game__content-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $width__tablet-max) {
+  .game__wrapper {
+    font-size: 0.6rem;
+  }
+
+  .game__init {
+    display: none;
+  }
+
+  .game__warning {
+    display: block;
+  }
+
+  .game__content {
+    display: none;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .game__wrapper {
+    font-size: 0.3rem;
+
+    &::before {
+      content: "";
+      height: calc(10em - 1px);
+    }
+  }
+
+  .game__announce {
+    margin-top: calc(30em / 8);
+  }
+
+  .game__warning {
+    margin-top: 10em;
+  }
+}
