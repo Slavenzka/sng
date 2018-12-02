@@ -181,10 +181,11 @@ a {
     display: block;
     padding: 1em 0;
     text-align: center; }
+  .nav__item:not(:last-of-type) {
+    position: relative; }
   .nav__item:not(:last-of-type) .nav__link {
     position: relative;
-    color: white;
-    background-color: #333333; }
+    color: white; }
     .nav__item:not(:last-of-type) .nav__link::before {
       content: "";
       position: absolute;

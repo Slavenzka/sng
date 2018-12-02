@@ -83,10 +83,13 @@
     text-align: center;
   }
 
+  .nav__item:not(:last-of-type) {
+    position: relative;
+  }
+
   .nav__item:not(:last-of-type) .nav__link {
     position: relative;
     color: $color__light;
-    background-color: $color__dark;
 
     &::before {
       content: "";
