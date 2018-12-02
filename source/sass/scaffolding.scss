@@ -2,6 +2,7 @@ html {
   position: relative;
   box-sizing: border-box;
   overflow: auto;
+  font-size: 62.5%;
 }
 
 *,
@@ -36,4 +37,18 @@ a {
   margin: 0 auto;
   padding: 0 50px;
   min-width: $width__desktop;
+}
+
+@media (max-width: $width__tablet-max) {
+  .container {
+    padding: 0 100% * 30 / 768;
+    min-width: $width__tablet;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .container {
+    padding: 0 100% * 15 / 320;
+    min-width: $width__mobile;
+  }
 }
