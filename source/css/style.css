@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Gill Sans";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/GillSansProCyrillic-Medium.woff2") fotmat("woff2"), url("../fonts/GillSansProCyrillic-Medium.woff") fotmat("woff"); }
+
+@font-face {
+  font-family: "Gill Sans";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/GillSansProCyrillic-Bold.woff2") fotmat("woff2"), url("../fonts/GillSansProCyrillic-Bold.woff") fotmat("woff"); }
+
+html {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: auto; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  min-width: 1280px; }

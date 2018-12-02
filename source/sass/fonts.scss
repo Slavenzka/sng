@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Gill Sans";
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GillSansProCyrillic-Medium.woff2") fotmat("woff2"),
+    url("../fonts/GillSansProCyrillic-Medium.woff") fotmat("woff");
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src:
+    url("../fonts/GillSansProCyrillic-Bold.woff2") fotmat("woff2"),
+    url("../fonts/GillSansProCyrillic-Bold.woff") fotmat("woff");
+}

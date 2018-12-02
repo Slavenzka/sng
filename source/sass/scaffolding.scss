@@ -1,0 +1,39 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  font-size: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  min-width: $width__desktop;
+}
