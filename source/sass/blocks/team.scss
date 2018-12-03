@@ -145,6 +145,13 @@
   width: 50em;
 }
 
+.team__item--3 .team__advantages {
+  align-self: flex-end;
+  margin-top: 4em;
+  margin-right: calc(18em);
+  width: 55em;
+}
+
 .team__item--2 .team__img {
   left: auto;
   right: 19.1em;
@@ -152,11 +159,26 @@
   height: 88.4em;
 }
 
+.team__item--3 .team__img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 114.8em;
+  height: 94.8em;
+}
+
 .team__item--2 .team__member {
   align-self: flex-start;
   margin-top: 22.1em;
   margin-left: 27em;
   text-align: right;
+}
+
+.team__item--3 .team__member {
+  align-self: flex-end;
+  margin-top: calc(31.3em + 1px);
+  margin-right: 33em;
+  width: 45em;
 }
 
 @media (max-width: 1919px) {
@@ -186,6 +208,13 @@
     }
   }
 
+  .team__item--3 > .container {
+    &::before {
+      bottom: calc(-126em / 2.34);
+      left: calc(50% - 135em);
+    }
+  }
+
   .team__item--1 .team__question {
     align-self: center;
     margin-right: 0;
@@ -197,21 +226,40 @@
     margin-left: -2.5em;
   }
 
+  .team__item--3 .team__question {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 5em;
+  }
+
   .team__item--1 .team__advantages {
     align-self: center;
     margin-right: 0;
-    margin-left: 55em;
+    margin-left: 57em;
   }
 
   .team__item--2 .team__advantages {
     align-self: center;
-    margin-left: -30em;
+    margin-left: -33em;
+  }
+
+  .team__item--3 .team__advantages {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 60em;
+    width: 55em;
   }
 
   .team__item--1 .team__member {
     align-self: center;
     margin-right: 0;
     margin-left: 40em;
+  }
+
+  .team__item--3 .team__member {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 51em;
   }
 
   .team__item--2 .team__member {
@@ -221,14 +269,14 @@
 
   .team__item--1 .team__img {
     left: calc(50% - 100em);
-    width: 103.3em;
-    height: 92.7em;
   }
 
   .team__item--2 .team__img {
-    right: calc(50% - 100em);
-    width: 103.3em;
-    height: 92.7em;
+    right: calc(50% - 90em);
+  }
+
+  .team__item--3 .team__img {
+    left: calc(50% - 101em);
   }
 }
 
@@ -248,16 +296,36 @@
     }
   }
 
+  .team__item--2 > .container {
+    &::before {
+      bottom: calc(-126em / 2.34);
+      right: calc(50% - 100em);
+    }
+  }
+
+  .team__item--3 > .container {
+    padding-top: 10em;
+
+    &::before {
+      bottom: calc(-126em / 2.34);
+      left: calc(50% - 115em);
+    }
+  }
+
   .team__question {
     font-size: 6em;
   }
 
   .team__item--1 .team__question {
-    margin-left: 0;
+    margin-left: -2em;
   }
 
   .team__item--2 .team__question {
     margin-left: 0;
+  }
+
+  .team__item--3 .team__question {
+    margin-left: -2em;
   }
 
   .team__item--1 .team__advantages {
@@ -273,20 +341,27 @@
     width: auto;
   }
 
+  .team__item--3 .team__advantages {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 10em;
+    width: auto;
+  }
+
   .team__advantage {
     font-size: 4em;
   }
 
   .team__item--1 .team__img {
     left: calc(50% - 80em);
-    width: 103.3em;
-    height: 92.7em;
   }
 
   .team__item--2 .team__img {
-    right: calc(50% - 70em);
-    width: 103.3em;
-    height: 92.7em;
+    right: calc(50% - 50em);
+  }
+
+  .team__item--3 .team__img {
+    left: calc(50% - 70em);
   }
 
   .team__member {
@@ -299,6 +374,11 @@
   }
 
   .team__item--2 .team__member {
+    margin-left: 0;
+    margin-top: 85em;
+  }
+
+  .team__item--3 .team__member {
     margin-left: 0;
     margin-top: 85em;
   }
@@ -316,7 +396,7 @@
       position: absolute;
       top: 0;
       left: -25vw;
-      width: calc(25vw + 50% + 95px);
+      width: calc(25vw + 50% + 100px);
       height: 100%;
       background-color: $color__light;
       z-index: -1;
@@ -335,8 +415,28 @@
       content: "";
       position: absolute;
       top: 0;
-      right: -25vw;
-      width: calc(25vw + 50% + 130px);
+      left: -25vw;
+      width: calc(25vw + 50% + 135px);
+      height: 100%;
+      background-color: $color__light;
+      z-index: -1;
+    }
+  }
+
+  .team__item--3 .team__info {
+    position: relative;
+    display: block;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25vw;
+      width: calc(25vw + 50% + 120px);
       height: 100%;
       background-color: $color__light;
       z-index: -1;
