@@ -1,0 +1,226 @@
+.team {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.team__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team__item > .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30em;
+  padding-bottom: 4.45em;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-126em / 2.34);
+    left: -35.5em;
+    width: 130em;
+    height: 130em;
+    background-color: $color__highlight;
+    border-radius: 50%;
+  }
+}
+
+.team__item--left .team__question {
+  align-self: flex-end;
+  margin-right: 4.32em;
+}
+
+.team__question {
+  margin: 0;
+  font-size: 8em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__main;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.team__highlight {
+  display: block;
+  margin-top: -0.2em;
+  color: $color__highlight;
+}
+
+.team__item--left .team__advantages {
+  align-self: flex-end;
+  margin-right: calc(2.7em * 8);
+}
+
+.team__advantages {
+  margin: 0;
+  margin-top: 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.team__advantage:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+.team__advantage {
+  position: relative;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-5em / 3);
+    width: calc(3.1em / 3);
+    height: calc(3.6em / 3);
+    background-image: url("../img/team__advantage-drop-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.team__item--left .team__member {
+  align-self: flex-end;
+  margin-right: 43em;
+}
+
+.team__item--1 .team__member {
+  margin-top: 34em;
+}
+
+.team__member {
+  margin: 0;
+  padding: 0;
+}
+
+.team__img {
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  width: 103.3em;
+  height: 92.7em;
+}
+
+.team__name {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__highlight;
+  text-transform: uppercase;
+}
+
+.team__rank {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+}
+
+@media (max-width: 1919px) {
+  .team {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .team {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .team__item > .container {
+    &::before {
+      bottom: calc(-126em / 2.34);
+      left: calc(50% - 135em);
+      width: 130em;
+      height: 130em;
+    }
+  }
+
+  .team__item--left .team__question {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 5em;
+  }
+
+  .team__item--left .team__advantages {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 55em;
+  }
+
+  .team__item--left .team__member {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 34em;
+  }
+
+  .team__img {
+    left: calc(50% - 100em);
+    width: 103.3em;
+    height: 92.7em;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .team {
+    font-size: 0.5rem;
+  }
+
+  .team__item > .container {
+    padding-top: 10em;
+
+    &::before {
+      bottom: calc(-126em / 2.34);
+      left: calc(50% - 115em);
+      width: 130em;
+      height: 130em;
+    }
+  }
+
+  .team__item--left .team__question {
+    margin-left: 0;
+  }
+
+  .team__item--left .team__advantages {
+    align-self: center;
+    margin-right: 0;
+    margin-left: 12em;
+  }
+
+  .team__img {
+    left: calc(50% - 80em);
+    width: 103.3em;
+    height: 92.7em;
+  }
+
+  .team__member {
+    width: 100%;
+  }
+
+  .team__item--left .team__member {
+    margin-left: 0;
+  }
+
+  .team__item--1 .team__member {
+    margin-top: 85em;
+  }
+
+  .team__info {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
