@@ -178,41 +178,37 @@
   }
 
   .team__item > .container {
-    display: flex;
-    flex-direction: column;
     padding-top: 10em;
 
     &::before {
-      bottom: calc(25em);
-      left: calc(50% - 90em);
-      width: 100em;
-      height: 100em;
+      bottom: calc(-126em / 2.34);
+      left: calc(50% - 115em);
+      width: 130em;
+      height: 130em;
     }
   }
 
   .team__item--left .team__question {
-    order: 2;
-    position: relative;
-    margin-top: 2em;
     margin-left: 0;
   }
 
   .team__item--left .team__advantages {
-    order: 3;
     align-self: center;
     margin-right: 0;
     margin-left: 10em;
   }
 
+  .team__advantage {
+    font-size: 4em;
+  }
+
   .team__img {
-    bottom: 40em;
     left: calc(50% - 80em);
     width: 103.3em;
     height: 92.7em;
   }
 
   .team__member {
-    order: 1;
     width: 100%;
   }
 
