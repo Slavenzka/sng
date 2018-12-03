@@ -472,6 +472,8 @@ a {
     width: 290px;
     height: auto; }
   .motto__descriptor {
-    width: 100%; }
+    width: 290px;
+    max-width: calc(145.5em / 4);
+    font-size: 3em; }
   .motto__link {
     margin-top: calc(20em / 3); } }
