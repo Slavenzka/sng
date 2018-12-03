@@ -634,24 +634,43 @@ a {
   .team {
     font-size: 0.5rem; }
   .team__item > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 10em; }
     .team__item > .container::before {
-      bottom: calc(-126em / 2.34);
-      left: calc(50% - 115em);
-      width: 130em;
-      height: 130em; }
+      bottom: calc(25em);
+      left: calc(50% - 90em);
+      width: 100em;
+      height: 100em; }
   .team__item--left .team__question {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    margin-top: 2em;
     margin-left: 0; }
   .team__item--left .team__advantages {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     -ms-flex-item-align: center;
         align-self: center;
     margin-right: 0;
-    margin-left: 12em; }
+    margin-left: 10em; }
   .team__img {
+    bottom: 40em;
     left: calc(50% - 80em);
     width: 103.3em;
     height: 92.7em; }
   .team__member {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     width: 100%; }
   .team__item--left .team__member {
     margin-left: 0; }
@@ -660,6 +679,16 @@ a {
   .team__info {
     position: relative;
     display: block;
+    padding: 1em 0;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.7); } }
+    z-index: 2; }
+    .team__info::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -25vw;
+      width: calc(25vw + 50% + 95px);
+      height: 100%;
+      background-color: white;
+      z-index: -1; } }
