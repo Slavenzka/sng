@@ -722,7 +722,7 @@ a {
     padding-top: 10em; }
     .team__item--1 > .container::before {
       bottom: calc(-126em / 2.34);
-      left: calc(50% - 115em);
+      left: calc(50% - 105em);
       width: 130em;
       height: 130em; }
   .team__item--2 > .container::before {
@@ -732,7 +732,7 @@ a {
     padding-top: 10em; }
     .team__item--3 > .container::before {
       bottom: calc(-126em / 2.34);
-      left: calc(50% - 115em); }
+      left: calc(50% - 105em); }
   .team__question {
     font-size: 6em; }
   .team__item--1 .team__question {
@@ -761,7 +761,7 @@ a {
   .team__advantage {
     font-size: 4em; }
   .team__item--1 .team__img {
-    left: calc(50% - 80em); }
+    left: calc(50% - 70em); }
   .team__item--2 .team__img {
     right: calc(50% - 50em); }
   .team__item--3 .team__img {
