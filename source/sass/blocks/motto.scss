@@ -1,0 +1,95 @@
+.motto {
+  padding-bottom: 2em;
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.motto > .container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 22.9em;
+}
+
+.motto__logo {
+  width: 57.9em;
+  height: 68.8em;
+}
+
+.motto__descriptor {
+  margin-top: calc(15em / 4);
+  width: calc(81em / 4);
+  font-size: 4em;
+  font-weight: 700;
+  line-height: calc(4.1em / 4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform-origin: 0 0;
+  transform: scaleY(1.3);
+}
+
+.motto__highlight {
+  background-color: $color__highlight;
+  border-radius: 10px;
+}
+
+.motto__link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: calc(10em / 3);
+  width: 5em;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: calc(5.5em / 3);
+  color: $color__main;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(-5.5em / 3);
+    left: calc(50% - 11em / 3 / 2);
+    width: calc(11em / 3);
+    height: calc(6em / 3);
+    background-image: url("../img/game__arrow-down.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1700px) {
+  .motto {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .motto {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .motto {
+    font-size: 0.45rem;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .motto > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .motto__logo {
+    width: 290px;
+    height: auto;
+  }
+
+  .motto__descriptor {
+    width: 290px;
+  }
+
+  .motto__link {
+    margin-top: calc(20em / 3);
+  }
+}

@@ -1,34 +1,39 @@
 .nav__list {
   display: flex;
   margin: 0;
-  margin-top: 1.5em;
+  margin-top: 0.4em;
+  margin-right: 0.4em;
   padding: 0;
   list-style: none;
 }
 
 .nav__item:not(:first-of-type) {
-  margin-left: 3.2em;
+  margin-left: 2.5em;
 }
 
 .nav__link {
+  display: block;
   font-size: 2.5em;
   font-weight: 400;
   line-height: 134%;
   color: $color__main;
   text-transform: uppercase;
+  transform-origin: 0 0;
+  transform: scaleY(1.35);
+  letter-spacing: 1.5px;
 }
 
 .nav__item:last-of-type .nav__link {
   position: relative;
-  padding: 0.3em 0.8em;
+  padding: 0;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    width: calc(17.5em / 2.5);
-    height: calc(4.4em / 2.5);
+    left: -7%;
+    width: 115%;
+    height: 100%;
     background-color: $color__highlight;
     border-radius: 10px;
     z-index: -1;
@@ -53,17 +58,21 @@
   }
 
   .nav__list {
+    position: absolute;
     flex-direction: column;
     align-items: center;
     transition-duration: 0.5s;
+    transition-property: opacity, transform;
   }
 
   .nav-opened .nav__list {
+    height: 100%;
     transform: translateY(0);
     opacity: 1;
   }
 
   .nav-closed .nav__list {
+    height: 0;
     transform: translateY(-300px);
     opacity: 0;
     pointer-events: none;
@@ -81,6 +90,7 @@
     display: block;
     padding: 1em 0;
     text-align: center;
+    transform: scaleY(1);
   }
 
   .nav__item:not(:last-of-type) {
