@@ -1007,3 +1007,75 @@ a {
     max-height: 100%; }
   .services__item {
     width: 290px; } }
+
+.reviews {
+  font-family: "Gill Sans";
+  font-size: 1rem; }
+
+.reviews > .container {
+  padding-top: 16em;
+  padding-bottom: 13.8em; }
+
+.reviews__heading {
+  margin: 0;
+  font-size: 8em;
+  font-weight: 700;
+  line-height: normal;
+  color: #ffcb4b;
+  text-transform: uppercase; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-top: 7em;
+  padding: 0;
+  list-style: none; }
+
+.reviews__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 55.6em; }
+
+.reviews__preview {
+  width: 100%;
+  max-height: 54.3em; }
+
+.reviews__decoration {
+  display: inline-block;
+  margin: 0;
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: normal;
+  color: #333333;
+  background-color: #ffcb4b;
+  vertical-align: middle;
+  border-radius: 7px; }
+
+@media (max-width: 1279px) {
+  .reviews {
+    font-size: 0.8rem; } }
+
+@media (max-width: 767px) {
+  .reviews {
+    font-size: 0.6rem; }
+  .reviews__heading {
+    font-size: 5em;
+    text-align: center; }
+  .reviews__link {
+    width: 50em; } }
