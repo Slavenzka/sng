@@ -1,0 +1,129 @@
+.services {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.services > .container {
+  padding-top: 26em;
+  padding-bottom: 5em;
+}
+
+.services__heading {
+  position: relative;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__main;
+  text-transform: uppercase;
+
+  &::before {
+    content: "Мы можем:";
+    position: absolute;
+    top: -1.1em;
+    left: -5px;
+    font-size: calc(8em / 4);
+    font-weight: 700;
+    line-height: normal;
+    color: $color__highlight;
+  }
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 3.5em;
+  padding: 0;
+  height: 70em;
+  list-style: none;
+}
+
+.services__item {
+  margin-top: 3em;
+  width: 28%;
+}
+
+.services__field {
+  display: inline-block;
+  margin: 0;
+  padding: calc(0.5em / 3) calc(1em / 3);
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__main;
+  text-transform: uppercase;
+  background-color: $color__highlight;
+  border-radius: calc(1em / 3);
+}
+
+.services__sublist {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 140%;
+  list-style: none;
+}
+
+.services__subitem {
+  position: relative;
+  padding-left: 1.5em;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    width: calc(1.9em / 2.5);
+    height: calc(2.3em / 2.5);
+    background-image: url("../img/team__advantage-drop-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 1400px) {
+  .services {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .services {
+    font-size: 0.6rem;
+  }
+
+  .services__list {
+    height: auto;
+    max-height: 100em;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .services > .container {
+    padding-top: 15em;
+  }
+
+  .services__heading {
+    padding-left: calc(50% - 6em);
+
+    &::before {
+      left: calc(50% - 4em);
+      font-size: calc(6em / 4);
+    }
+  }
+
+  .services__list {
+    align-items: center;
+    max-height: 100%;
+  }
+
+  .services__item {
+    width: 290px;
+  }
+}
