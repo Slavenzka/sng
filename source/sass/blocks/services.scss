@@ -105,6 +105,10 @@
 }
 
 @media (max-width: $width__mobile-max) {
+  .services {
+    font-size: 0.7rem;
+  }
+
   .services > .container {
     padding-top: 15em;
   }
@@ -113,8 +117,8 @@
     padding-left: calc(50% - 6em);
 
     &::before {
-      left: calc(50% - 4em);
-      font-size: calc(6em / 4);
+      left: calc(50% - 3.8em);
+      font-size: calc(5.5em / 4);
     }
   }
 
