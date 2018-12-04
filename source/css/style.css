@@ -991,13 +991,15 @@ a {
     max-height: 100em; } }
 
 @media (max-width: 767px) {
+  .services {
+    font-size: 0.7rem; }
   .services > .container {
     padding-top: 15em; }
   .services__heading {
     padding-left: calc(50% - 6em); }
     .services__heading::before {
-      left: calc(50% - 4em);
-      font-size: calc(6em / 4); }
+      left: calc(50% - 3.8em);
+      font-size: calc(5.5em / 4); }
   .services__list {
     -webkit-box-align: center;
         -ms-flex-align: center;
