@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Gill Sans";
   font-weight: 400;
@@ -891,3 +892,116 @@ a {
       height: 100%;
       background-color: white;
       z-index: -1; } }
+
+.services {
+  font-family: "Gill Sans";
+  font-size: 1rem; }
+
+.services > .container {
+  padding-top: 26em;
+  padding-bottom: 5em; }
+
+.services__heading {
+  position: relative;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: normal;
+  color: black;
+  text-transform: uppercase; }
+  .services__heading::before {
+    content: "Мы можем:";
+    position: absolute;
+    top: -1.1em;
+    left: -5px;
+    font-size: calc(8em / 4);
+    font-weight: 700;
+    line-height: normal;
+    color: #ffcb4b; }
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-top: 3.5em;
+  padding: 0;
+  height: 70em;
+  list-style: none; }
+
+.services__item {
+  margin-top: 3em;
+  width: 28%; }
+
+.services__field {
+  display: inline-block;
+  margin: 0;
+  padding: calc(0.5em / 3) calc(1em / 3);
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  color: black;
+  text-transform: uppercase;
+  background-color: #ffcb4b;
+  border-radius: calc(1em / 3); }
+
+.services__sublist {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  font-size: 2.5em;
+  font-weight: 400;
+  line-height: 140%;
+  list-style: none; }
+
+.services__subitem {
+  position: relative;
+  padding-left: 1.5em; }
+  .services__subitem::before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0;
+    width: calc(1.9em / 2.5);
+    height: calc(2.3em / 2.5);
+    background-image: url("../img/team__advantage-drop-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+@media (max-width: 1400px) {
+  .services {
+    font-size: 0.9rem; } }
+
+@media (max-width: 1279px) {
+  .services {
+    font-size: 0.6rem; }
+  .services__list {
+    height: auto;
+    max-height: 100em; } }
+
+@media (max-width: 767px) {
+  .services > .container {
+    padding-top: 15em; }
+  .services__heading {
+    padding-left: calc(50% - 6em); }
+    .services__heading::before {
+      left: calc(50% - 4em);
+      font-size: calc(6em / 4); }
+  .services__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-height: 100%; }
+  .services__item {
+    width: 290px; } }
