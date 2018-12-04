@@ -604,7 +604,19 @@ a {
     left: auto;
     right: -34.8em; }
 
+.team__item--4 > .container {
+  padding-top: 30em; }
+  .team__item--4 > .container::before {
+    bottom: calc(-126em / 2.3);
+    left: auto;
+    right: -34.8em; }
+
 .team__item--2 .team__question {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 2em; }
+
+.team__item--4 .team__question {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-left: 2em; }
@@ -620,6 +632,11 @@ a {
   margin-right: calc(18em);
   width: 55em; }
 
+.team__item--4 .team__advantages {
+  margin-top: 4em;
+  margin-left: 22em;
+  width: 50em; }
+
 .team__item--2 .team__img {
   left: auto;
   right: 19.1em;
@@ -632,6 +649,12 @@ a {
   left: 0;
   width: 114.8em;
   height: 94.8em; }
+
+.team__item--4 .team__img {
+  left: auto;
+  right: 0;
+  width: 116em;
+  height: 89.1em; }
 
 .team__item--2 .team__member {
   -ms-flex-item-align: start;
@@ -646,6 +669,14 @@ a {
   margin-top: calc(31.3em + 1px);
   margin-right: 33em;
   width: 45em; }
+
+.team__item--4 .team__member {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: calc(35em);
+  margin-left: 27em;
+  width: 50em;
+  text-align: right; }
 
 @media (max-width: 1919px) {
   .team {
@@ -665,55 +696,42 @@ a {
   .team__item--3 > .container::before {
     bottom: calc(-126em / 2.34);
     left: calc(50% - 135em); }
+  .team__item--4 > .container::before {
+    bottom: calc(-126em / 2.34);
+    right: calc(50% - 130em); }
   .team__item--1 .team__question {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-right: 0;
-    margin-left: 5em; }
+    margin-right: 1.6em; }
   .team__item--2 .team__question {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-left: -2.5em; }
+    margin-left: 0.8em; }
   .team__item--3 .team__question {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-right: 0;
-    margin-left: 5em; }
+    margin-right: 2em; }
+  .team__item--4 .team__question {
+    margin-left: 0.8em; }
   .team__item--1 .team__advantages {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-right: 0;
-    margin-left: 57em; }
+    margin-right: 1em; }
   .team__item--2 .team__advantages {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-left: -33em; }
+    margin-left: 12em; }
   .team__item--3 .team__advantages {
-    -ms-flex-item-align: center;
-        align-self: center;
     margin-right: 0;
-    margin-left: 60em;
     width: 55em; }
+  .team__item--4 .team__advantages {
+    margin-left: 12em; }
   .team__item--1 .team__member {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-right: 0;
-    margin-left: 40em; }
-  .team__item--3 .team__member {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-right: 0;
-    margin-left: 51em; }
+    margin-right: 15em; }
   .team__item--2 .team__member {
-    -ms-flex-item-align: center;
-        align-self: center;
-    margin-left: -55em; }
+    margin-left: 2em; }
+  .team__item--3 .team__member {
+    margin-right: 4em; }
+  .team__item--4 .team__member {
+    margin-left: -2em; }
   .team__item--1 .team__img {
     left: calc(50% - 100em); }
   .team__item--2 .team__img {
     right: calc(50% - 90em); }
   .team__item--3 .team__img {
-    left: calc(50% - 101em); } }
+    left: calc(50% - 101em); }
+  .team__item--4 .team__img {
+    right: calc(50% - 100em); } }
 
 @media (max-width: 767px) {
   .team {
@@ -733,14 +751,27 @@ a {
     .team__item--3 > .container::before {
       bottom: calc(-126em / 2.34);
       left: calc(50% - 105em); }
+  .team__item--4 > .container::before {
+    bottom: calc(-126em / 2.34);
+    right: calc(50% - 100em); }
   .team__question {
     font-size: 6em; }
   .team__item--1 .team__question {
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-left: -2em; }
   .team__item--2 .team__question {
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-left: 0; }
   .team__item--3 .team__question {
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-left: -2em; }
+  .team__item--4 .team__question {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 0; }
   .team__item--1 .team__advantages {
     -ms-flex-item-align: center;
         align-self: center;
@@ -758,6 +789,12 @@ a {
     margin-right: 0;
     margin-left: 10em;
     width: auto; }
+  .team__item--4 .team__advantages {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 0;
+    margin-left: 10em;
+    width: auto; }
   .team__advantage {
     font-size: 4em; }
   .team__item--1 .team__img {
@@ -766,15 +803,28 @@ a {
     right: calc(50% - 50em); }
   .team__item--3 .team__img {
     left: calc(50% - 70em); }
+  .team__item--4 .team__img {
+    right: calc(50% - 60em); }
   .team__member {
     width: 100%; }
   .team__item--1 .team__member {
-    margin-left: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 0;
     margin-top: 85em; }
   .team__item--2 .team__member {
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-left: 0;
     margin-top: 85em; }
   .team__item--3 .team__member {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-left: 0;
+    margin-top: 85em; }
+  .team__item--4 .team__member {
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-left: 0;
     margin-top: 85em; }
   .team__item--1 .team__info {
@@ -804,7 +854,7 @@ a {
       content: "";
       position: absolute;
       top: 0;
-      left: -25vw;
+      right: -25vw;
       width: calc(25vw + 50% + 135px);
       height: 100%;
       background-color: white;
@@ -820,8 +870,24 @@ a {
       content: "";
       position: absolute;
       top: 0;
-      left: -25vw;
-      width: calc(25vw + 50% + 120px);
+      left: -35vw;
+      width: calc(35vw + 50% + 120px);
+      height: 100%;
+      background-color: white;
+      z-index: -1; }
+  .team__item--4 .team__info {
+    position: relative;
+    display: block;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    z-index: 2; }
+    .team__item--4 .team__info::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -35vw;
+      width: calc(35vw + 50% + 135px);
       height: 100%;
       background-color: white;
       z-index: -1; } }
