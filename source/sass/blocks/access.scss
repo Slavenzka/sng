@@ -1,0 +1,109 @@
+.access {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
+.access > .container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5em;
+}
+
+.access__heading {
+  margin: 0;
+  margin-top: 4em;
+  width: calc(52em / 8);
+  font-size: 8em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__main;
+  text-transform: uppercase;
+}
+
+.access__highlight {
+  color: $color__highlight;
+}
+
+.access__form {
+  margin-top: 26em;
+  width: 50%;
+}
+
+.access__form input {
+  display: block;
+  padding: 0.5em 0;
+  padding-left: 1px;
+  width: 100%;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+  border: none;
+  border-bottom: 5px solid $color__highlight;
+}
+
+.access__form input::placeholder {
+  font-size: calc(3em / 3);
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+}
+
+.access__form input:not(:last-of-type) {
+  margin-bottom: 3em;
+}
+
+.access__btn {
+  display: block;
+  margin: 0;
+  margin-top: calc(14em / 3);
+  margin-left: -5em;
+  padding: 0 3em;
+  height: calc(8em / 3);
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+  background-color: $color__highlight;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 1919px) {
+  .access {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .access {
+    font-size: 0.7rem;
+  }
+
+  .access__heading {
+    margin-top: 5em;
+    font-size: 7em;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .access > .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .access__heading {
+    margin-top: 2em;
+    font-size: 6em;
+  }
+
+  .access__form {
+    margin-top: 15em;
+    width: 290px;
+  }
+
+  .access__btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
