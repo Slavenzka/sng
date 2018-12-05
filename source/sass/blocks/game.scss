@@ -1,8 +1,11 @@
+.game {
+  font-family: $font-family__main;
+  font-size: 1rem;
+}
+
 .game__wrapper {
   position: relative;
   padding-bottom: 2.4em;
-  font-family: $font-family__main;
-  font-size: 1rem;
   z-index: 1;
 
   &::before {
@@ -71,52 +74,170 @@
   }
 }
 
-.game__warning {
-  display: none;
-  margin: 0;
-  margin-top: 5em;
-  padding: 0;
-  font-size: 3.9em;
-  font-weight: 400;
-  line-height: calc(5.5em / 3.9);
-  color: $color__dark;
-  text-align: center;
-  background-color: transparent;
-}
-
 .game__content {
-  margin-top: -544px;
+  position: relative;
+  font-size: 1.2rem;
 }
 
-.game__frame {
+.game__rules {
+  padding-right: 5.2em;
+  font-size: 4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.game__marks {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-right: 39em;
+  list-style: none;
+}
+
+.game__check {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  opacity: 0;
+  pointer-events: none;
+  border: none;
+}
+
+.game__check + label {
+  display: block;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
+  background-color: transparent;
+  border: 5px solid $color__highlight;
+  border-radius: 7px;
+  transition-duration: 1s;
+  pointer-events: none;
+}
+
+.game__check:checked + label {
+  background-color: $color__highlight;
+  background-image: url("../img/modal__drop-icon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.game__mark:not(:last-of-type) .game__check + label {
+  margin-right: 23px;
+}
+
+.game__area {
+  position: relative;
   margin: 0 auto;
-  width: 963px;
-  height: 544px;
+  margin-top: 2em;
+  width: 96.3em;
+  height: 54.4em;
   background-image: url("../img/game__content-bg.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+}
+
+.game__comment {
+  position: absolute;
+  padding: 0.5em 2em;
+  left: calc(50% - 60em / 1.8 / 2);
+  width: calc(60em / 1.8);
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  background-color: $color__light;
+  transition-duration: 1s;
+  opacity: 1;
+  pointer-events: all;
+  border-radius: 10px;
+}
+
+.game__comment--hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.game__item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.game__question {
+  position: absolute;
+  top: 10em;
+  left: 8em;
+  width: 4.3em;
+  height: 4.9em;
+  transition-duration: 1s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.game__question--fade {
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.game__answer {
+  position: absolute;
+  top: 8em;
+  left: 6.1em;
+  width: 8.2em;
+  height: 8.9em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game__answer--reveal {
+  opacity: 1;
+  transition-duration: 2s;
 }
 
 @media (max-width: $width__tablet-max) {
-  .game__wrapper {
+  .game {
     font-size: 0.6rem;
   }
 
-  .game__init {
-    display: none;
-  }
-
-  .game__warning {
-    display: block;
-  }
-
   .game__content {
-    display: none;
+    font-size: 0.9rem;
+  }
+
+  .game__marks {
+    padding-right: 34em;
+  }
+
+  .game__check + label {
+    width: 35px;
+    height: 35px;
+    border: 4px solid $color__highlight;
+  }
+}
+
+@media (max-width: 950px) {
+  .game__content {
+    font-size: 0.7rem;
+  }
+
+  .game__marks {
+    padding-right: 17em;
   }
 }
 
 @media (max-width: $width__mobile-max) {
-  .game__wrapper {
+  .game {
     font-size: 0.3rem;
 
     &::before {
@@ -129,7 +250,16 @@
     margin-top: calc(30em / 8);
   }
 
-  .game__warning {
-    margin-top: 10em;
+  .game__rules {
+    padding-right: 9.8em;
+  }
+
+  .game__content {
+    font-size: 0.5rem;
+    overflow: scroll;
+  }
+
+  .game__marks {
+    padding-right: 3em;
   }
 }

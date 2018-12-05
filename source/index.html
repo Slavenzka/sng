@@ -57,26 +57,80 @@
       МНТЦ СТРОЙНЕФТЕГАЗ - Обучение профессиональным стандартам. Центр оценки квалификаций.
     </h1>
     <section class="game">
-      <div class="container">
+      <!-- <div class="container"> -->
         <div class="game__wrapper">
-          <h2 class="visually-hidden">
-            Викторина о технике безопасности
-          </h2>
-          <p class="game__announce">
-            Мы&nbsp;изменили технологии обучения персонала для создания безопасных условий труда
-          </p>
-          <button class="game__init" type="button">
-            Попробовать
-          </button>
-          <p class="game__warning">
-            На экранах 1280рх и более будет доступна интерактивная викторина о технике безопасности
-          </p>
-        </div>
-        <div class="game__content">
-          <div class="game__frame">
+          <div class="container">
+            <h2 class="visually-hidden">
+              Викторина о технике безопасности
+            </h2>
+            <p class="game__announce">
+              Мы&nbsp;изменили технологии обучения персонала для создания безопасных условий труда
+            </p>
+            <button class="game__init" type="button">
+              Попробовать
+            </button>
           </div>
         </div>
-      </div>
+        <div class="game__content">
+          <p class="game__rules">
+            Найдите нарушения охраны труда
+          </p>
+          <ul class="game__marks">
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer1">
+              <label for="answer1">Ответ 1</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer2">
+              <label for="answer2">Ответ 2</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer3">
+              <label for="answer3">Ответ 3</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer4">
+              <label for="answer4">Ответ 4</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer5">
+              <label for="answer5">Ответ 5</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer6">
+              <label for="answer6">Ответ 6</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer7">
+              <label for="answer7">Ответ 7</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer8">
+              <label for="answer8">Ответ 8</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer9">
+              <label for="answer9">Ответ 9</label>
+            </li>
+            <li class="game__mark">
+              <input type="checkbox" class="game__check" id="answer10">
+              <label for="answer10">Ответ 10</label>
+            </li>
+          </ul>
+          <div class="game__area">
+            <p class="game__comment game__comment--hide">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eligendi corrupti fugit accusamus explicabo officia.
+            </p>
+            <ul class="game__list">
+              <li class="game__item game__item--1" data-answer="Размещайте запрещающие знаки на уровне глаз">
+                <img class="game__question" src="img/game__item--1.png" alt="Знак не курить">
+                <img class="game__answer" src="img/game__item--1-outline.png" alt="Знак не курить">
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      <!-- </div> -->
     </section>
     <section class="motto">
       <div class="container">
@@ -519,12 +573,12 @@
               </figcaption>
               <ul class="contacts__socials">
                 <li class="contacts__social contacts__social--fb">
-                  <a href="#" class="contacts__link">
+                  <a href="https://www.facebook.com/StroyneftegazRU/" class="contacts__link" target="_blank">
                     Мы в Facebook
                   </a>
                 </li>
                 <li class="contacts__social contacts__social--vk">
-                  <a href="#" class="contacts__link">
+                  <a href="https://www.vk.com/stroyneftegaz" class="contacts__link" target="_blank">
                     Мы в VK
                   </a>
                 </li>
@@ -534,11 +588,11 @@
         </ul>
       </div>
     </section>
-    <iframe src="https://pro.ispringcloud.ru/acc/2N5Br6E2ODc0/s/6874-YS2B2-9MKkM-7H74j" frameborder="0" width="100%" height="600px"></iframe>
   </main>
 
   <script src="js/menu-toggle.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/game-zoom.js"></script>
 </body>
 
 </html>
