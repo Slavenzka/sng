@@ -1,0 +1,193 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: $font-family__main;
+  background-color: $color__highlight;
+  z-index: 5;
+  overflow: scroll;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal > .container {
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  z-index: 10;
+}
+
+.modal__logo {
+  width: 28.3em;
+}
+
+.modal__btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    width: 41px;
+    height: 2px;
+    background-color: $color__dark;
+    transform-origin: 0 0;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    width: 41px;
+    height: 2px;
+    background-color: $color__dark;
+    transform-origin: 100% 0;
+    transform: rotate(-45deg);
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5em;
+}
+
+.modal__img {
+  display: block;
+  width: 78em;
+}
+
+.modal__text {
+  margin-left: 5em;
+  width: 40%;
+}
+
+.modal__descriptor {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+}
+
+.modal__heading {
+  position: relative;
+  margin: 0;
+  margin-top: 2.5em;
+  font-size: 4em;
+  font-weight: 700;
+  line-height: normal;
+  color: $color__light;
+  text-transform: uppercase;
+
+  &::before {
+    content: "услуга";
+    position: absolute;
+    top: calc(-7em / 4);
+    left: 0;
+    font-size: calc(3em / 4);
+    font-weight: 700;
+    line-height: normal;
+    color: $color__main;
+  }
+}
+
+.modal__list {
+  margin: 0;
+  margin-top: 1em;
+  padding: 0;
+  padding-left: 2em;
+  font-size: 3em;
+  font-weight: 400;
+  line-height: normal;
+  color: $color__main;
+  list-style: none;
+}
+
+.modal__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(-5.5em / 3);
+    width: calc(3.1em / 3);
+    height: calc(3.6em / 3);
+    background-image: url("../img/modal__drop-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.modal__item:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1500px) {
+  .modal {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: $width__tablet-max) {
+  .modal {
+    font-size: 0.8rem;
+  }
+
+  .modal__wrapper {
+    flex-direction: column;
+  }
+
+  .modal__img {
+    order: 2;
+    margin: 0 auto;
+    margin-top: 5em;
+    width: 78em;
+  }
+
+  .modal__text {
+    order: 1;
+    margin: 0 auto;
+    width: 78em;
+  }
+}
+
+@media (max-width: $width__mobile-max) {
+  .modal__btn {
+    position: absolute;
+    top: 35px;
+    right: 25px;
+  }
+
+  .modal__img {
+    width: 100%;
+  }
+
+  .modal__text {
+    width: 100%;
+  }
+}

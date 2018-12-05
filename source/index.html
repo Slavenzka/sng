@@ -353,28 +353,112 @@
         </h2>
         <ul class="reviews__list">
           <li class="reviews__item">
-            <a href="#" class="reviews__link">
+            <a href="#" class="reviews__link" data-modal="review-1">
               <img src="img/review__preview--1.png" alt="Превью отзыва" class="reviews__preview">
               <span class="reviews__decoration">
                 Прочитать отзыв
               </span>
             </a>
+            <div class="modal" id="review-1">
+              <div class="container">
+                <img src="img/logo.png" alt="Логотип МНТЦ СТРОЙНЕФТЕГАЗ" class="modal__logo">
+                <button class="modal__btn" type="button">
+                  Закрыть окно
+                </button>
+                <div class="modal__wrapper">
+                  <img class="modal__img" src="img/reviews__item-1.jpg" alt="Текст отзыва от Заказчика">
+                  <div class="modal__text">
+                    <p class="modal__descriptor">
+                      Проект МНТЦ «СТРОЙНЕФТЕГАЗ» в области строительства для генерального подрядчика Правительства Москвы АО «МОСИНЖПРОЕКТ»
+                    </p>
+                    <h3 class="modal__heading">
+                      Вводный инструктаж посредством видеопрезентации.
+                    </h3>
+                    <ul class="modal__list">
+                      <li class="modal__item">
+                        Создали видео об особо опасных участках работ с предупреждениями о возможных несчастных случаях
+                      </li>
+                      <li class="modal__item">
+                        Подготовили материал с учетом особенностей строительства линии метрополитена
+                      </li>
+                      <li class="modal__item">
+                        Обучили 2000 человек
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="reviews__item">
-            <a href="#" class="reviews__link">
+            <a href="#" class="reviews__link" data-modal="review-2">
               <img src="img/review__preview--2.png" alt="Превью отзыва" class="reviews__preview">
               <span class="reviews__decoration">
                 Прочитать отзыв
               </span>
             </a>
+            <div class="modal" id="review-2">
+              <div class="container">
+                <img src="img/logo.png" alt="Логотип МНТЦ СТРОЙНЕФТЕГАЗ" class="modal__logo">
+                <button class="modal__btn" type="button">
+                  Закрыть окно
+                </button>
+                <div class="modal__wrapper">
+                  <img class="modal__img" src="img/reviews__item-2.jpg" alt="Текст отзыва от Заказчика">
+                  <div class="modal__text">
+                    <p class="modal__descriptor">
+                      Проект МНТЦ «СТРОЙНЕФТЕГАЗ» для ведущей международной компании в области добычи нефти ООО "НЭШЭНЛ ОИЛВЭЛЛ ВАРКО ЕВРАЗИЯ"
+                    </p>
+                    <h3 class="modal__heading">
+                      Проведение обучения на английском языке для ТОП менеджеров компании.
+                    </h3>
+                    <ul class="modal__list">
+                      <li class="modal__item">
+                        Высшие руководители компаний по прилету в Москву были обучены по охране труда, пожарно-техническому минимуму и первой помощи на английском языке.
+                      </li>
+                      <li class="modal__item">
+                        Так же были разобраны особые случаи в формате вопрос-ответ и проведена практическая работа по освоению навыков оказания первой помощи.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
           <li class="reviews__item">
-            <a href="#" class="reviews__link">
+            <a href="#" class="reviews__link" data-modal="review-3">
               <img src="img/review__preview--3.png" alt="Превью отзыва" class="reviews__preview">
               <span class="reviews__decoration">
                 Прочитать отзыв
               </span>
             </a>
+            <div class="modal" id="review-3">
+              <div class="container">
+                <img src="img/logo.png" alt="Логотип МНТЦ СТРОЙНЕФТЕГАЗ" class="modal__logo">
+                <button class="modal__btn" type="button">
+                  Закрыть окно
+                </button>
+                <div class="modal__wrapper">
+                  <img class="modal__img" src="img/reviews__item-3.jpg" alt="Текст отзыва от Заказчика">
+                  <div class="modal__text">
+                    <p class="modal__descriptor">
+                      Проект МНТЦ «СТРОЙНЕФТЕГАЗ» для ведущей международной компанией в области добычи газа, партнера ПАО «ГАЗПРОМ» в ЕВРОПЕ «Wintershall Holding GmbH»
+                    </p>
+                    <h3 class="modal__heading">
+                      Обучение по ГОиЧС для супервайзеров.
+                    </h3>
+                    <ul class="modal__list">
+                      <li class="modal__item">
+                        Прочли теоретический курс супервайзерам организации и научили на практике работать с самоспасателем при эвакуации.
+                      </li>
+                      <li class="modal__item">
+                        Организовали полигон, на котором сотрудники учились правильно локализовать и тушить возгорания разными огнетушителями.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -415,8 +499,8 @@
               <figcaption class="contacts__caption">
                 Наша почта:
               </figcaption>
-              <a href="mailto:hello@mail.com" class="contacts__mail">
-                hello@mail.com
+              <a href="mailto:info@sngrf.ru" class="contacts__mail">
+                info@sngrf.ru
               </a>
             </figure>
           </li>
@@ -454,6 +538,7 @@
   </main>
 
   <script src="js/menu-toggle.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
