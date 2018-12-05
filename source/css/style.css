@@ -507,12 +507,19 @@ a {
   .game__announce {
     margin-top: calc(30em / 8); }
   .game__rules {
-    padding-right: 9.8em; }
+    padding-right: 0; }
   .game__content {
     font-size: 0.5rem;
     overflow: scroll; }
   .game__marks {
-    padding-right: 3em; } }
+    padding-right: 0; }
+  .game__check + label {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ffcb4b;
+    border-radius: 3px; }
+  .game__mark:not(:last-of-type) .game__check + label {
+    margin-right: 10px; } }
 
 .motto {
   padding-bottom: 2em;

@@ -251,7 +251,7 @@
   }
 
   .game__rules {
-    padding-right: 9.8em;
+    padding-right: 0;
   }
 
   .game__content {
@@ -260,6 +260,17 @@
   }
 
   .game__marks {
-    padding-right: 3em;
+    padding-right: 0;
+  }
+
+  .game__check + label {
+    width: 20px;
+    height: 20px;
+    border: 3px solid $color__highlight;
+    border-radius: 3px;
+  }
+
+  .game__mark:not(:last-of-type) .game__check + label {
+    margin-right: 10px;
   }
 }
