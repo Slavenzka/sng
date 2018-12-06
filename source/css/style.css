@@ -19,7 +19,8 @@ html {
           box-sizing: border-box;
   overflow: auto;
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  line-height: 0vw; }
 
 *,
 *::before,
