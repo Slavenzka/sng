@@ -36,24 +36,12 @@
   position: relative;
   display: block;
   margin: 0 auto;
-  margin-top: calc(10em / 3);
+  margin-top: calc(15em / 3);
   width: 5em;
   font-size: 3em;
   font-weight: 400;
   line-height: calc(5.5em / 3);
   color: $color__main;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: calc(-5.5em / 3);
-    left: calc(50% - 11em / 3 / 2);
-    width: calc(11em / 3);
-    height: calc(6em / 3);
-    background-image: url("../img/game__arrow-down.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
 @media (max-width: 1700px) {
