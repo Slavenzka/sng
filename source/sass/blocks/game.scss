@@ -31,11 +31,7 @@
 }
 
 .game__wrapper--hide {
-  transition-duration: 0.5s;
-  transform: translateY(-200em);
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1;
+  display: none;
 }
 
 .game__announce {
@@ -85,7 +81,7 @@
 .game__content {
   position: relative;
   font-size: 1rem;
-  margin-top: -80em;
+  margin-top: 10em;
 }
 
 .game__rules {
