@@ -956,11 +956,12 @@ a {
 @media (max-width: 1600px) {
   .team {
     font-size: 0.65rem; }
-  .team__item--4 > .container {
-    padding-top: 30em;
-    padding-right: 60%;
+  .team__item > .container::before {
     width: 845px;
     height: 845px; }
+  .team__item--4 > .container {
+    padding-top: 30em;
+    padding-right: 60%; }
     .team__item--4 > .container::before {
       bottom: calc(-126em / 2.3);
       left: auto;
