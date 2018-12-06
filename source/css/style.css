@@ -1602,7 +1602,7 @@ a {
   font-size: 1rem;
   font-family: "Gill Sans";
   background-color: #ffcb4b;
-  z-index: 5;
+  z-index: 11;
   overflow: scroll;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
