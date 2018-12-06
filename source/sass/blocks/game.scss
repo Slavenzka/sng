@@ -142,6 +142,31 @@
   height: 54.4em;
   background-image: url("../img/game__content-bg.jpg");
   background-size: cover;
+  overflow: hidden;
+}
+
+.game__win {
+  position: absolute;
+  padding: 0.5em 2em;
+  bottom: 2em;
+  left: calc(50% - 80em / 3 / 2);
+  width: calc(80em / 3);
+  font-size: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color__highlight;
+  background-color: $color__light;
+  transition-duration: 1s;
+  opacity: 1;
+  pointer-events: all;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.game__win--hide {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .game__comment {
@@ -190,6 +215,11 @@
   transition-duration: 1s;
 }
 
+.game__item img:active {
+  background: none;
+  outline: none;
+}
+
 .game__item--1 .game__question {
   top: 10em;
   left: 8em;
@@ -223,6 +253,41 @@
   left: 33.7em;
   width: 8.5em;
   height: 16.5em;
+}
+
+.game__item--6 .game__question {
+  top: 27em;
+  left: 48em;
+  width: 7.7em;
+  height: 10.3em;
+}
+
+.game__item--7 .game__question {
+  top: 34em;
+  left: 60em;
+  width: 19.6em;
+  height: 19.8em;
+}
+
+.game__item--8 .game__question {
+  top: 20em;
+  left: 51em;
+  width: 7.6em;
+  height: 9.2em;
+}
+
+.game__item--9 .game__question {
+  top: 12em;
+  left: 63.5em;
+  width: 5.5em;
+  height: 15.2em;
+}
+
+.game__item--10 .game__question {
+  top: 20em;
+  left: 79em;
+  width: 16.4em;
+  height: 18.9em;
 }
 
 .game__answer {
@@ -269,6 +334,41 @@
   left: 32.3em;
   width: 11.4em;
   height: 19.3em;
+}
+
+.game__item--6 .game__answer {
+  top: 25.4em;
+  left: 46.3em;
+  width: 10.9em;
+  height: 13.5em;
+}
+
+.game__item--7 .game__answer {
+  top: 32.6em;
+  left: 58.4em;
+  width: 22.7em;
+  height: 22.9em;
+}
+
+.game__item--8 .game__answer {
+  top: 18.5em;
+  left: 49.4em;
+  width: 10.9em;
+  height: 12.5em;
+}
+
+.game__item--9 .game__answer {
+  top: 10.5em;
+  left: 61.8em;
+  width: 8.7em;
+  height: 18.3em;
+}
+
+.game__item--10 .game__answer {
+  top: 18em;
+  left: 77em;
+  width: 20.4em;
+  height: 23em;
 }
 
 @media (max-width: $width__tablet-max) {
