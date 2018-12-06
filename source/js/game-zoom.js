@@ -18,7 +18,7 @@
         comment.classList.remove('game__comment--hide');
       }
       comment.textContent = item.dataset.answer;
-
+      item.style.pointerEvents = "none";
       marks[index].querySelector('.game__check').checked = 'true';
     });
   });
