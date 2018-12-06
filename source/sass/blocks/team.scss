@@ -29,7 +29,8 @@
   }
 }
 
-.team__item--1 > .container {
+.team__item--1 > .container,
+.team__item--3 > .container {
   padding-left: 60%;
 }
 
@@ -117,6 +118,7 @@
 
 .team__item--2 > .container {
   padding-top: 23em;
+  padding-right: 60%;
 
   &::before {
     bottom: calc(-126em / 2.3);
@@ -127,6 +129,7 @@
 
 .team__item--4 > .container {
   padding-top: 30em;
+  padding-right: 60%;
 
   &::before {
     bottom: calc(-126em / 2.3);
@@ -136,30 +139,27 @@
 }
 
 .team__item--2 .team__question {
-  align-self: flex-start;
   margin-left: 2em;
 }
 
 .team__item--4 .team__question {
   align-self: flex-start;
-  margin-left: 2em;
+  margin-left: 1em;
 }
 
 .team__item--2 .team__advantages {
-  margin-left: 22em;
+  margin-left: 17em;
   width: 50em;
 }
 
 .team__item--3 .team__advantages {
-  align-self: flex-end;
   margin-top: 4em;
-  margin-right: calc(18em);
   width: 55em;
 }
 
 .team__item--4 .team__advantages {
   margin-top: 4em;
-  margin-left: 22em;
+  margin-left: 9em;
   width: 50em;
 }
 
@@ -186,23 +186,19 @@
 }
 
 .team__item--2 .team__member {
-  align-self: flex-start;
   margin-top: 22.1em;
-  margin-left: 27em;
   text-align: right;
 }
 
 .team__item--3 .team__member {
-  align-self: flex-end;
   margin-top: calc(31.3em + 1px);
-  margin-right: 33em;
+  margin-right: 26em;
   width: 45em;
 }
 
 .team__item--4 .team__member {
-  align-self: flex-start;
-  margin-top: calc(35em);
-  margin-left: 27em;
+  margin-top: 35em;
+  margin-left: 15em;
   width: 50em;
   text-align: right;
 }
@@ -248,10 +244,6 @@
     }
   }
 
-  // .team__item--1 .team__question {
-  //   margin-right: 1.6em;
-  // }
-
   .team__item--2 .team__question {
     margin-left: 0.8em;
   }
@@ -263,10 +255,6 @@
   .team__item--4 .team__question {
     margin-left: 0.8em;
   }
-
-  // .team__item--1 .team__advantages {
-  //   margin-right: 1em;
-  // }
 
   .team__item--2 .team__advantages {
     margin-left: 12em;
@@ -280,10 +268,6 @@
   .team__item--4 .team__advantages {
     margin-left: 12em;
   }
-
-  // .team__item--1 .team__member {
-  //   margin-right: 15em;
-  // }
 
   .team__item--2 .team__member {
     margin-left: 2em;
@@ -310,7 +294,7 @@
   }
 
   .team__item--4 .team__img {
-    right: calc(50% - 100em);
+    right: calc(50% - 105em);
   }
 }
 
@@ -321,7 +305,7 @@
 
   .team__item--1 > .container {
     padding-top: 10em;
-    padding-left: 0;
+    padding-left: 100% * 15 / 320;
 
     &::before {
       bottom: calc(-126em / 2.34);
@@ -332,6 +316,8 @@
   }
 
   .team__item--2 > .container {
+    padding-right: 100% * 15 / 320;
+
     &::before {
       bottom: calc(-126em / 2.34);
       right: calc(50% - 100em);
@@ -340,6 +326,7 @@
 
   .team__item--3 > .container {
     padding-top: 10em;
+    padding-left: 100% * 15 / 320;
 
     &::before {
       bottom: calc(-126em / 2.34);
@@ -348,6 +335,8 @@
   }
 
   .team__item--4 > .container {
+    padding-right: 100% * 15 / 320;
+
     &::before {
       bottom: calc(-126em / 2.34);
       right: calc(50% - 100em);
