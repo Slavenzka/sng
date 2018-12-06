@@ -953,12 +953,26 @@ a {
   .team {
     font-size: 0.8rem; } }
 
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .team {
-    font-size: 0.6rem; }
+    font-size: 0.65rem; }
+  .team__item--4 > .container {
+    padding-top: 30em;
+    padding-right: 60%; }
+    .team__item--4 > .container::before {
+      bottom: calc(-126em / 2.3);
+      left: auto;
+      right: -34.8em; }
+  .team__item--1 .team__img {
+    width: 620px;
+    height: 556px; }
+  .team__item--2 .team__img {
+    width: 542px;
+    height: 530px; }
+  .team__item--3 .team__img {
+    width: 688px;
+    height: 569px; }
   .team__item--4 .team__img {
-    left: auto;
-    right: 0;
     width: 696px;
     height: 535px; } }
 
