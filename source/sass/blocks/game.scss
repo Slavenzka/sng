@@ -76,7 +76,7 @@
 
 .game__content {
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .game__rules {
@@ -91,7 +91,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-right: 39em;
+  padding-right: 28em;
   list-style: none;
 }
 
@@ -118,6 +118,7 @@
   border: 5px solid $color__highlight;
   border-radius: 7px;
   transition-duration: 1s;
+  transition-property: background-image, background-color;
   pointer-events: none;
 }
 
@@ -171,17 +172,10 @@
 
 .game__item {
   position: absolute;
-  width: 100%;
-  height: 100%;
 }
 
 .game__question {
   position: absolute;
-  top: 10em;
-  left: 8em;
-  width: 4.3em;
-  height: 4.9em;
-  transition-duration: 1s;
   opacity: 1;
   cursor: pointer;
 }
@@ -191,12 +185,48 @@
   opacity: 0;
 }
 
+.game__item img {
+  transition-property: opacity, transform;
+  transition-duration: 1s;
+}
+
+.game__item--1 .game__question {
+  top: 10em;
+  left: 8em;
+  width: 4.3em;
+  height: 4.9em;
+}
+
+.game__item--2 .game__question {
+  top: 18em;
+  left: 0;
+  width: 14.2em;
+  height: 29.4em;
+}
+
+.game__item--3 .game__question {
+  top: 30.5em;
+  left: 16.4em;
+  width: 6.4em;
+  height: 10em;
+}
+
+.game__item--4 .game__question {
+  top: 32em;
+  left: 23em;
+  width: 6.3em;
+  height: 15.4em;
+}
+
+.game__item--5 .game__question {
+  top: 16.5em;
+  left: 33.7em;
+  width: 8.5em;
+  height: 16.5em;
+}
+
 .game__answer {
   position: absolute;
-  top: 8em;
-  left: 6.1em;
-  width: 8.2em;
-  height: 8.9em;
   opacity: 0;
   pointer-events: none;
 }
@@ -204,6 +234,41 @@
 .game__answer--reveal {
   opacity: 1;
   transition-duration: 2s;
+}
+
+.game__item--1 .game__answer {
+  top: 8em;
+  left: 6.1em;
+  width: 8.2em;
+  height: 8.9em;
+}
+
+.game__item--2 .game__answer {
+  top: 15.5em;
+  left: -1.5em;
+  width: 17.7em;
+  height: 34.5em;
+}
+
+.game__item--3 .game__answer {
+  top: 28.8em;
+  left: 15.1em;
+  width: 8.9em;
+  height: 13.4em;
+}
+
+.game__item--4 .game__answer {
+  top: 30.7em;
+  left: 21.5em;
+  width: 9.2em;
+  height: 18.1em;
+}
+
+.game__item--5 .game__answer {
+  top: 15.3em;
+  left: 32.3em;
+  width: 11.4em;
+  height: 19.3em;
 }
 
 @media (max-width: $width__tablet-max) {
