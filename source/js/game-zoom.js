@@ -7,6 +7,30 @@
   let marks = document.querySelectorAll('.game__mark');
   let win = area.querySelector('.game__win');
 
+  function gameInit () {
+    let hover = document.querySelector('.game__wrapper');
+    let trigger = hover.querySelector('.game__init');
+
+    trigger.addEventListener('click', function () {
+      hover.classList.add('game__wrapper--hide');
+    });
+  }
+  function checkFinal (item) {
+    let final = true;
+
+    marks.forEach(item => {
+      if (!item.querySelector('.game__check').checked) {
+        final = false;
+      }
+    });
+
+    if (final) {
+      win.classList.remove('game__win--hide');
+    }
+  }
+
+  gameInit();
+
   items.forEach((item, index) => {
     item.addEventListener('click', function () {
       let question = item.querySelector('.game__question');
@@ -23,20 +47,7 @@
       item.style.pointerEvents = "none";
       marks[index].querySelector('.game__check').checked = 'true';
 
-      let final = true;
-
-      marks.forEach(item => {
-        if (!item.querySelector('.game__check').checked) {
-          console.log('false');
-          final = false;
-        }
-      });
-
-      if (final) {
-        win.classList.remove('game__win--hide');
-      }
-
-
+      checkFinal(item);
     });
   });
 
