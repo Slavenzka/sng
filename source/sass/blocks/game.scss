@@ -32,9 +32,10 @@
 
 .game__wrapper--hide {
   transition-duration: 0.5s;
-  transform: translateY(-20em);
+  transform: translateY(-200em);
   opacity: 0;
   pointer-events: none;
+  z-index: -1;
 }
 
 .game__announce {
