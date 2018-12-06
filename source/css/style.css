@@ -923,7 +923,6 @@ a {
   height: 88.4em; }
 
 .team__item--3 .team__img {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 114.8em;
@@ -956,7 +955,12 @@ a {
 
 @media (max-width: 1500px) {
   .team {
-    font-size: 0.6rem; } }
+    font-size: 0.6rem; }
+  .team__item--4 .team__img {
+    left: auto;
+    right: 0;
+    width: 696px;
+    height: 535px; } }
 
 @media (max-width: 1279px) {
   .team__item--1 > .container::before {

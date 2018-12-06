@@ -171,7 +171,6 @@
 }
 
 .team__item--3 .team__img {
-  position: absolute;
   bottom: 0;
   left: 0;
   width: 114.8em;
@@ -212,6 +211,13 @@
 @media (max-width: 1500px) {
   .team {
     font-size: 0.6rem;
+  }
+
+  .team__item--4 .team__img {
+    left: auto;
+    right: 0;
+    width: 696px;
+    height: 535px;
   }
 }
 
