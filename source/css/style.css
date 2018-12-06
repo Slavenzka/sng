@@ -314,13 +314,7 @@ a {
     z-index: -1; }
 
 .game__wrapper--hide {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transform: translateY(-200em);
-          transform: translateY(-200em);
-  opacity: 0;
-  pointer-events: none;
-  z-index: -1; }
+  display: none; }
 
 .game__announce {
   margin: 0;
@@ -367,7 +361,7 @@ a {
 .game__content {
   position: relative;
   font-size: 1rem;
-  margin-top: -80em; }
+  margin-top: 10em; }
 
 .game__rules {
   margin: 0;
