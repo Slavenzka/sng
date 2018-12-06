@@ -19,8 +19,7 @@ html {
           box-sizing: border-box;
   overflow: auto;
   font-size: 62.5%;
-  scroll-behavior: smooth;
-  line-height: 0vw; }
+  scroll-behavior: smooth; }
 
 *,
 *::before,
@@ -957,7 +956,7 @@ a {
 
 @media (max-width: 1500px) {
   .team {
-    font-size: 0.65rem; } }
+    font-size: 0.6rem; } }
 
 @media (max-width: 1279px) {
   .team__item--1 > .container::before {
