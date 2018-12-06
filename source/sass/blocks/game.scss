@@ -31,7 +31,11 @@
 }
 
 .game__wrapper--hide {
-  display: none;
+  transition-duration: 0.5s;
+  transform: translateY(-200em);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .game__announce {
@@ -81,7 +85,7 @@
 .game__content {
   position: relative;
   font-size: 1rem;
-  margin-top: 10em;
+  margin-top: -80em;
 }
 
 .game__rules {
@@ -92,6 +96,11 @@
   font-size: 4em;
   text-transform: uppercase;
   text-align: center;
+  opacity: 1;
+}
+
+.game__wrapper:not(.game__wrapper--hide) + .game__content .game__rules {
+  opacity: 0.1;
 }
 
 .game__marks {
@@ -382,6 +391,10 @@
 @media (max-width: $width__tablet-max) {
   .game {
     font-size: 0.6rem;
+  }
+
+  .game__init {
+    margin-top: calc(70em / 3.9);
   }
 
   .game__content {
