@@ -366,7 +366,7 @@ a {
 
 .game__content {
   position: relative;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: -72em; }
 
 .game__rules {
@@ -379,7 +379,8 @@ a {
   text-align: center;
   opacity: 1; }
 
-.game__wrapper:not(.game__wrapper--hide) + .game__content .game__rules {
+.game__wrapper:not(.game__wrapper--hide) + .game__content .game__rules,
+.game__wrapper:not(.game__wrapper--hide) + .game__content .game__marks {
   opacity: 0.1; }
 
 .game__marks {
