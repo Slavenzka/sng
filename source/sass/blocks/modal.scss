@@ -177,6 +177,10 @@
 }
 
 @media (max-width: $width__mobile-max) {
+  .modal {
+    font-size: 0.7rem;
+  }
+
   .modal__btn {
     position: absolute;
     top: 35px;
@@ -185,6 +189,10 @@
 
   .modal__img {
     width: 100%;
+  }
+
+  .modal__heading {
+    font-size: 3em;
   }
 
   .modal__text {

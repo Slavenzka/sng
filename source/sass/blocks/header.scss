@@ -25,7 +25,7 @@
 .header__img {
   width: 28.3em;
   height: 7.3em;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media (max-width: $width__tablet-max) {
