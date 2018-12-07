@@ -366,8 +366,8 @@ a {
 
 .game__content {
   position: relative;
-  font-size: 1rem;
-  margin-top: -80em; }
+  font-size: 1.5rem;
+  margin-top: -72em; }
 
 .game__rules {
   margin: 0;
@@ -580,8 +580,10 @@ a {
 
 .game__answer--reveal {
   opacity: 1;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s; }
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity; }
 
 .game__item--1 .game__answer {
   top: 8em;
@@ -643,6 +645,10 @@ a {
   width: 20.4em;
   height: 23em; }
 
+@media (max-width: 1500px) {
+  .game__content {
+    font-size: 1.1rem; } }
+
 @media (max-width: 1279px) {
   .game {
     font-size: 0.6rem; }
@@ -699,6 +705,7 @@ a {
 
 @media (max-width: 400px) {
   .game__content {
+    margin-top: -75em;
     font-size: 3px; } }
 
 .motto {
