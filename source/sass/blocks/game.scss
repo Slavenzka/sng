@@ -425,7 +425,9 @@
 @media (max-width: $width__mobile-max) {
   .game {
     font-size: 0.3rem;
+  }
 
+  .game__wrapper {
     &::before {
       content: "";
       height: calc(10em - 1px);
@@ -446,7 +448,6 @@
 
   .game__content {
     font-size: 0.5rem;
-    overflow: scroll;
   }
 
   .game__marks {
@@ -462,5 +463,27 @@
 
   .game__mark:not(:last-of-type) .game__check + label {
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .game__content {
+    font-size: 5px;
+  }
+
+  .game__comment {
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 500px) {
+  .game__content {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .game__content {
+    font-size: 3px;
   }
 }
