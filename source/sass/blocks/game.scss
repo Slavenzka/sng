@@ -99,7 +99,8 @@
   opacity: 1;
 }
 
-.game__wrapper:not(.game__wrapper--hide) + .game__content .game__rules {
+.game__wrapper:not(.game__wrapper--hide) + .game__content .game__rules,
+.game__wrapper:not(.game__wrapper--hide) + .game__content .game__marks {
   opacity: 0.1;
 }
 
