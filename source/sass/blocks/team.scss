@@ -213,13 +213,6 @@
     font-size: 0.65rem;
   }
 
-  .team__item > .container {
-    &::before {
-      width: 845px;
-      height: 845px;
-    }
-  }
-
   .team__item--4 > .container {
     padding-top: 30em;
     padding-right: 60%;
@@ -228,6 +221,15 @@
       bottom: calc(-126em / 2.3);
       left: auto;
       right: -34.8em;
+    }
+  }
+}
+
+@media (max-width: 1600px) and (min-width: $width__mobile-max) {
+  .team__item > .container {
+    &::before {
+      width: 845px;
+      height: 845px;
     }
   }
 
