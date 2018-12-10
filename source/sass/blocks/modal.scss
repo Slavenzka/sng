@@ -91,6 +91,7 @@
   font-weight: 400;
   line-height: normal;
   color: $color__main;
+  text-align: justify;
 }
 
 .modal__heading {
@@ -129,6 +130,7 @@
 
 .modal__item {
   position: relative;
+  text-align: justify;
 
   &::before {
     content: "";

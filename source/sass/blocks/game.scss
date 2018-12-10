@@ -109,7 +109,7 @@
   justify-content: center;
   margin: 0;
   padding: 0;
-  padding-right: 28em;
+  padding-right: 43em;
   list-style: none;
 }
 
@@ -393,6 +393,10 @@
 @media (max-width: 1500px) {
   .game__content {
     font-size: 1.1rem;
+  }
+
+  .game__marks {
+    padding-right: 34em;
   }
 }
 

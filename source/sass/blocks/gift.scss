@@ -63,3 +63,9 @@
     background-position: 50% 50%;
   }
 }
+
+@media (max-width: $width__tablet-max) {
+  .gift .access__heading {
+    margin-top: 2em;
+  }
+}
