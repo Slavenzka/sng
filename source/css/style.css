@@ -392,7 +392,7 @@ a {
           justify-content: center;
   margin: 0;
   padding: 0;
-  padding-right: 28em;
+  padding-right: 43em;
   list-style: none; }
 
 .game__check {
@@ -648,7 +648,9 @@ a {
 
 @media (max-width: 1500px) {
   .game__content {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .game__marks {
+    padding-right: 34em; } }
 
 @media (max-width: 1279px) {
   .game {
@@ -748,11 +750,15 @@ a {
   display: block;
   margin: 0 auto;
   margin-top: calc(15em / 3);
-  width: 5em;
+  padding: 0.3em 0;
+  width: 7em;
   font-size: 3em;
   font-weight: 400;
   line-height: calc(5.5em / 3);
-  color: black; }
+  color: black;
+  text-align: center;
+  background-color: #ffcb4b;
+  border-radius: 10px; }
 
 @media (max-width: 1700px) {
   .motto {
@@ -1736,7 +1742,8 @@ a {
   font-size: 3em;
   font-weight: 400;
   line-height: normal;
-  color: black; }
+  color: black;
+  text-align: justify; }
 
 .modal__heading {
   position: relative;
@@ -1769,7 +1776,8 @@ a {
   list-style: none; }
 
 .modal__item {
-  position: relative; }
+  position: relative;
+  text-align: justify; }
   .modal__item::before {
     content: "";
     position: absolute;
@@ -1886,3 +1894,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+
+@media (max-width: 1279px) {
+  .gift .access__heading {
+    margin-top: 2em; } }
