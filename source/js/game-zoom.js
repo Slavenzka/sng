@@ -9,9 +9,6 @@
   let marks;
 
   function gameInit () {
-    let hover = document.querySelector('.game__wrapper');
-    let trigger = hover.querySelector('.game__init');
-
     function renderCheckboxes () {
       const target = document.querySelector('.game__marks');
       const template = document.querySelector('#result-item-template').content.querySelector('.game__mark');
@@ -28,10 +25,6 @@
     }
 
     renderCheckboxes();
-
-    trigger.addEventListener('click', function () {
-      hover.classList.add('game__wrapper--hide');
-    });
   }
 
   function checkFinal (item) {
